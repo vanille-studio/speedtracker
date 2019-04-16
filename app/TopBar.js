@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom' // eslint-disable-line no-unused-vars
 
 import Logo from './Logo'
-import LogoTitle from './LogoTitle'
+import logo from './img/logo.svg'
 
 class TopBar extends React.Component {
   _onPeriodChange (event) {
@@ -19,7 +19,7 @@ class TopBar extends React.Component {
         <div className='c-TopBar__inner'>
           <a href='https://vanille.studio/'>
             <Logo width={40} />
-            <img className='c-LogoTitle' src="img/logo.svg" alt="Vanille"/>
+            <img className='c-LogoTitle' src={logo} alt="Vanille"/>
           </a>
           <div className='c-TopBar__nav'>
             <p>
